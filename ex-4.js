@@ -12,4 +12,10 @@ let getJohnProfile = () => {
     );
   });
 };
-// Start coding here
+
+
+async function DisplaycheckStatus() {
+  let profile = await getJohnProfile();
+  console.log(profile);
+}
+DisplaycheckStatus();

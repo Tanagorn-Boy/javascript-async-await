@@ -12,4 +12,11 @@ let getJohnProfile = () => {
   });
 };
 
-// Start coding here
+function onSuceessDisplay (data) {
+console.log(data)
+}
+function onFailDisplay (error) {
+  console.log(error) 
+}
+
+getJohnProfile().then(onSuceessDisplay).catch(onFailDisplay )

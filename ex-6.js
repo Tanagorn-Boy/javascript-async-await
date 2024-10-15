@@ -32,4 +32,14 @@ let getJohnOrders = () => {
   });
 };
 
-// Start coding here
+async function DisplaycheckStatus() {
+  try { 
+  let profile = await getJohnProfile();
+  console.log(profile);
+  let order = await getJohnOrders();
+  console.log(order)
+  } catch (error) {
+    console.log(error)
+  }
+}
+DisplaycheckStatus();

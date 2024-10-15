@@ -32,4 +32,14 @@ let getJohnOrders = () => {
   });
 };
 
-// Start coding here
+function onSuceessDisplay (data) {
+  console.log(data)
+  }
+  function onFailDisplay (error) {
+    console.log(error) 
+  }
+
+  getJohnProfile()
+  .then(onSuceessDisplay)
+  .then(getJohnOrders) 
+  .then(onSuceessDisplay)
